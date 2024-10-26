@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌟 Enhanced TODO App 🌟</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="todo-container">
+    <h1>🌟 My Enhanced TODO List 🌟</h1>
+    <button id="newTaskBtn">➕ New Task</button>
+    <ul id="todoList"></ul>
+    <h2>✅ Completed Tasks</h2>
+    <ul id="completedList"></ul>
+  </div>
+
+  <!-- モーダルウィンドウ -->
+  <div id="taskModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>New Task</h2>
+      <input type="text" id="taskTitle" placeholder="Task Title">
+      <textarea id="taskDescription" placeholder="Task Description"></textarea>
+      <label>Priority: </label>
+      <select id="taskPriority">
+        <option value="high">High 🔥</option>
+        <option value="medium">Medium 🌟</option>
+        <option value="low">Low 🍃</option>
+      </select>
+      <button id="saveTaskBtn">Save Task</button>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
